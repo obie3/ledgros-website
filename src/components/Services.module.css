@@ -1,0 +1,30 @@
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.list li:hover {
+  border-color: rgba(45, 216, 135, 0.3);
+  transform: translateY(-1px);
+}
+
+.list li span {
+  line-height: 1.4;
+}

@@ -1,0 +1,36 @@
+.phone {
+  position: relative;
+  background: linear-gradient(180deg, #1D2330 0%, #0C0F14 100%);
+  box-shadow:
+    0 60px 120px -40px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  flex-shrink: 0;
+}
+
+.notch {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #06080B;
+  z-index: 5;
+}
+
+.screen {
+  height: 100%;
+  background: var(--bg-app);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
