@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Logo } from './icons/Logo';
+import logo from '@/assets/logo.png';
 import { Button } from './Button';
 import s from './Nav.module.css';
 
-const LINKS: { id: string; label: string }[] = [
-  { id: 'features',       label: 'Features' },
-  { id: 'screens',        label: 'Screens' },
-  { id: 'pricing',        label: 'Pricing' },
-  { id: 'faq',            label: 'Faq' },
-  { id: 'privacy',        label: 'Privacy' },
-  { id: 'delete-account', label: 'Delete account' },
+const LINKS: { href: string; label: string }[] = [
+  { href: '/#features',      label: 'Features' },
+  { href: '/#screens',       label: 'Screens' },
+  { href: '/#pricing',       label: 'Pricing' },
+  { href: '/#faq',           label: 'FAQ' },
+  { href: '/privacy',        label: 'Privacy' },
+  { href: '/delete-account', label: 'Delete account' },
 ];
 
 export function Nav() {
@@ -24,23 +24,23 @@ export function Nav() {
 
   return (
     <header className={`${s.nav} ${scrolled ? s.scrolled : ''}`}>
-      <a href="#top" className={s.brand}>
-        <Logo />
+      <a href="/" className={s.brand}>
+        <img src={logo} alt="" width={30} height={30} />
         <div>
-          <span className={s.brandName}>LedgrOS</span>
+          <span className={s.brandName}>vLedgr</span>
           <small>Financial OS</small>
         </div>
       </a>
 
       <nav className={`${s.links} ${open ? s.open : ''}`}>
         {LINKS.map((l) => (
-          <a key={l.id} href={`#${l.id}`} onClick={() => setOpen(false)}>
+          <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
             {l.label}
           </a>
         ))}
       </nav>
 
-      <Button href="#pricing" variant="primary" className={s.cta}>
+      <Button href="/#pricing" variant="primary" className={s.cta}>
         Get the app
       </Button>
 

@@ -8,7 +8,7 @@ export function DashboardScreen() {
 
       <div className={s.s1Head}>
         <div className={s.s1Brand}>
-          <b>LedgrOS</b>
+          <b>vLedgr</b>
           <small>FINANCIAL OS</small>
         </div>
         <div className={s.s1Actions}>

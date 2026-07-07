@@ -5,3 +5,7 @@ dist-ssr
 .DS_Store
 *.local
 .history
+
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts

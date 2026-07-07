@@ -1,8 +1,7 @@
-import { Phone } from './phone/Phone';
-import { DashboardScreen } from './phone/DashboardScreen';
 import { Button } from './Button';
 import { Star } from './icons/Star';
 import s from './Hero.module.css';
+import dashboardShot from '@/assets/dashboard.png';
 
 export function Hero() {
   return (
@@ -22,13 +21,13 @@ export function Hero() {
         </h1>
 
         <p className={s.sub}>
-          LedgrOS is the Financial OS for Nigerian freelancers and small
+          vLedgr is the Financial OS for Nigerian freelancers and small
           businesses. Snap receipts, import statements, and watch your
           books — and your tax — keep themselves up to date.
         </p>
 
         <div className={s.ctas}>
-          <Button href="#pricing" variant="primary" size="lg">Start free</Button>
+          <Button href="#pricing" variant="primary" size="lg">Get the app</Button>
           <Button href="#screens" variant="ghost"   size="lg">See the app</Button>
         </div>
 
@@ -38,7 +37,13 @@ export function Hero() {
       </div>
 
       <div className={`${s.stack} ${s.solo}`}>
-        <Phone screen={<DashboardScreen />} />
+        <img
+          className={s.heroShot}
+          src={dashboardShot}
+          alt="vLedgr dashboard showing income, expenses and tax estimate"
+          width={300}
+          loading="eager"
+        />
       </div>
     </section>
   );

@@ -10,6 +10,20 @@ import { DeleteAccount } from '@/components/DeleteAccount';
 import { Footer } from '@/components/Footer';
 
 export default function App() {
+  // Lightweight path routing — Google Play requires privacy policy and
+  // account-deletion pages at dedicated URLs (no #fragments).
+  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+
+  if (path === '/privacy' || path === '/delete-account') {
+    return (
+      <>
+        <Nav />
+        <main>{path === '/privacy' ? <Privacy /> : <DeleteAccount />}</main>
+        <Footer />
+      </>
+    );
+  }
+
   return (
     <>
       <Nav />
@@ -20,10 +34,8 @@ export default function App() {
         <Services />
         <Pricing />
         <FAQ />
-        <Privacy />
-        <DeleteAccount />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

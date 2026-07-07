@@ -1,4 +1,4 @@
-import { Logo } from './icons/Logo';
+import logo from '@/assets/logo.png';
 import s from './Footer.module.css';
 
 export function Footer() {
@@ -7,11 +7,11 @@ export function Footer() {
       <div className={s.inner}>
         <div className={s.brand}>
           <div className={s.brandRow}>
-            <Logo />
-            <span className={s.brandName}>LedgrOS</span>
+            <img src={logo} alt="" width={30} height={30} />
+            <span className={s.brandName}>vLedgr</span>
           </div>
           <p className={s.tagline}>
-            Financial OS for the naira economy. Built in Lagos.
+            Financial OS for the naira economy. Built in Nigeria.
           </p>
         </div>
 
@@ -19,17 +19,17 @@ export function Footer() {
           <div className={s.col}>
             <h4>Product</h4>
             <ul>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#screens">App</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#screens">App</a></li>
+              <li><a href="/#pricing">Pricing</a></li>
+              <li><a href="/#faq">FAQ</a></li>
             </ul>
           </div>
           <div className={s.col}>
             <h4>Legal</h4>
             <ul>
-              <li><a href="#privacy">Privacy</a></li>
-              <li><a href="#delete-account">Delete account</a></li>
+              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="/delete-account">Delete account</a></li>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Cookies</a></li>
             </ul>
@@ -46,8 +46,8 @@ export function Footer() {
       </div>
 
       <div className={s.bottom}>
-        <span>© {new Date().getFullYear()} LedgrOS. All rights reserved.</span>
-        <span>Made with care in Lagos, Nigeria.</span>
+        <span>© {new Date().getFullYear()} vLedgr. All rights reserved.</span>
+        <span>Made with care in Nigeria.</span>
       </div>
     </footer>
   );

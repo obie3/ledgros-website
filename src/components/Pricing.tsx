@@ -8,9 +8,9 @@ export function Pricing() {
     <section id="pricing" className="section section-alt">
       <header className="section-head">
         <p className="eyebrow">Pricing</p>
-        <h2>Free forever. Pro when you grow.</h2>
+        <h2>Simple pricing, in naira.</h2>
         <p className="section-sub">
-          Pay in naira. No card-on-file gotchas. Yearly saves you two months.
+          No card-on-file gotchas. Cancel anytime. Yearly saves you two months.
         </p>
       </header>
 

@@ -5,7 +5,7 @@ export function DeleteAccount() {
     <section id="delete-account" className="section">
       <header className="section-head">
         <p className="eyebrow">Account deletion</p>
-        <h2>Delete your LedgrOS account.</h2>
+        <h2>Delete your vLedgr account.</h2>
         <p className="section-sub">
           Two paths — in the app or by request. We honour either one.
         </p>
@@ -16,7 +16,7 @@ export function DeleteAccount() {
           <span className={s.badge}>Fastest</span>
           <h3>In the app</h3>
           <ol className={s.steps}>
-            <li>Open LedgrOS.</li>
+            <li>Open vLedgr.</li>
             <li>Go to <b>Profile → Account → Delete account</b>.</li>
             <li>Confirm with your biometric or password.</li>
           </ol>
