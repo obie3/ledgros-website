@@ -1,4 +1,5 @@
 import { Button } from './Button';
+import { APP_STORE_URL } from './StoreBadges';
 import { Check } from './icons/Check';
 import { plans } from '@/data/content';
 import s from './Pricing.module.css';
@@ -36,7 +37,9 @@ export function Pricing() {
               ))}
             </ul>
             <Button
-              href="#"
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               variant={p.highlight ? 'primary' : 'ghost'}
               className={s.cta}
             >

@@ -38,9 +38,9 @@ export function Privacy() {
           <h3>Your rights</h3>
           <p>
             NDPR, GDPR, and CCPA: export, correct, or delete your data anytime
-            from Profile → Privacy. Or email{' '}
-            <a className={s.link} href="mailto:privacy@ledgros.app">
-              privacy@ledgros.app
+            from Settings in the app. Or email{' '}
+            <a className={s.link} href="mailto:privacy@usezakios.com">
+              privacy@usezakios.com
             </a>
             .
           </p>
@@ -50,7 +50,7 @@ export function Privacy() {
       <p className={s.fullLink}>
         Read the full policy at{' '}
         <a href="#" className={s.link}>
-          ledgros.app/privacy
+          usezakios.com/privacy
         </a>
         .
       </p>

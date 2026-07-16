@@ -14,7 +14,7 @@ export function Features() {
         </h2>
         <p className="section-sub">
           Built for the way real people earn — invoices late, receipts
-          crumpled, currencies mixed. vLedgr keeps up so you don't have to.
+          crumpled, currencies mixed. Zakios keeps up so you don't have to.
         </p>
       </header>
 

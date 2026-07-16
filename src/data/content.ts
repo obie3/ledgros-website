@@ -103,7 +103,7 @@ export const faqs: Faq[] = [
   },
   {
     q: 'Do I need a bank connection?',
-    a: 'No. vLedgr works fully offline. Bank statement import is opt-in: drop a CSV or PDF, we never touch your bank credentials.',
+    a: 'No. Zakios works fully offline. Bank statement import is opt-in: drop a CSV or PDF, we never touch your bank credentials.',
   },
   {
     q: 'How accurate is the Nigeria 2026 tax estimate?',
@@ -115,6 +115,6 @@ export const faqs: Faq[] = [
   },
   {
     q: 'Do you support currencies other than the naira?',
-    a: 'Yes. Many freelancers earn in USD and spend in NGN. vLedgr logs both and tracks the exchange rate at the time of each transaction so your books — and your tax — reflect reality.',
+    a: 'Yes. Many freelancers earn in USD and spend in NGN. Zakios logs both and tracks the exchange rate at the time of each transaction so your books — and your tax — reflect reality.',
   },
 ];

@@ -1,4 +1,5 @@
 import logo from '@/assets/logo.png';
+import { StoreBadges } from './StoreBadges';
 import s from './Footer.module.css';
 
 export function Footer() {
@@ -8,11 +9,12 @@ export function Footer() {
         <div className={s.brand}>
           <div className={s.brandRow}>
             <img src={logo} alt="" width={30} height={30} />
-            <span className={s.brandName}>vLedgr</span>
+            <span className={s.brandName}>Zakios</span>
           </div>
           <p className={s.tagline}>
             Financial OS for the naira economy. Built in Nigeria.
           </p>
+          <StoreBadges compact />
         </div>
 
         <div className={s.cols}>
@@ -37,16 +39,16 @@ export function Footer() {
           <div className={s.col}>
             <h4>Contact</h4>
             <ul>
-              <li><a href="mailto:hello@ledgros.app">hello@ledgros.app</a></li>
-              <li><a href="mailto:support@ledgros.app">support@ledgros.app</a></li>
-              <li><a href="mailto:privacy@ledgros.app">privacy@ledgros.app</a></li>
+              <li><a href="mailto:hello@usezakios.com">hello@usezakios.com</a></li>
+              <li><a href="mailto:support@usezakios.com">support@usezakios.com</a></li>
+              <li><a href="mailto:privacy@usezakios.com">privacy@usezakios.com</a></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div className={s.bottom}>
-        <span>© {new Date().getFullYear()} vLedgr. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Zakios. All rights reserved.</span>
         <span>Made with care in Nigeria.</span>
       </div>
     </footer>

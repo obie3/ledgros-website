@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { StoreBadges } from './StoreBadges';
 import { Star } from './icons/Star';
 import s from './Hero.module.css';
 import dashboardShot from '@/assets/dashboard.png';
@@ -21,14 +21,13 @@ export function Hero() {
         </h1>
 
         <p className={s.sub}>
-          vLedgr is the Financial OS for Nigerian freelancers and small
+          Zakios is the Financial OS for Nigerian freelancers and small
           businesses. Snap receipts, import statements, and watch your
           books — and your tax — keep themselves up to date.
         </p>
 
         <div className={s.ctas}>
-          <Button href="#pricing" variant="primary" size="lg">Get the app</Button>
-          <Button href="#screens" variant="ghost"   size="lg">See the app</Button>
+          <StoreBadges />
         </div>
 
         <div className={s.meta}>
@@ -40,7 +39,7 @@ export function Hero() {
         <img
           className={s.heroShot}
           src={dashboardShot}
-          alt="vLedgr dashboard showing income, expenses and tax estimate"
+          alt="Zakios dashboard showing income, expenses and tax estimate"
           width={300}
           loading="eager"
         />

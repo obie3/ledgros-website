@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import logo from '@/assets/logo.png';
 import { Button } from './Button';
+import { APP_STORE_URL } from './StoreBadges';
 import s from './Nav.module.css';
 
 const LINKS: { href: string; label: string }[] = [
@@ -27,7 +28,7 @@ export function Nav() {
       <a href="/" className={s.brand}>
         <img src={logo} alt="" width={30} height={30} />
         <div>
-          <span className={s.brandName}>vLedgr</span>
+          <span className={s.brandName}>Zakios</span>
           <small>Financial OS</small>
         </div>
       </a>
@@ -40,7 +41,13 @@ export function Nav() {
         ))}
       </nav>
 
-      <Button href="/#pricing" variant="primary" className={s.cta}>
+      <Button
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="primary"
+        className={s.cta}
+      >
         Get the app
       </Button>
 
